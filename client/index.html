@@ -16,8 +16,16 @@
 
     <!-- Introduction Controller -->
     <div ng-controller="IntroductionController">
-      <h1>{{test}}</h1>
+      <h1>{{message}}</h1>
+
+      <label>Query:</label>
+      <input type="text" ng-model="query" placeholder="Search Here">
+
+      <ul>
+        <li ng-repeat="fruit in fruits | filter : query">{{fruit.name}} ({{fruit.color}})</li>
+      </ul>
+      
     </div>
-    
+
   </body>
 </html>

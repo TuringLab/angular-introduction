@@ -5,5 +5,20 @@ angular.module('angularIntroduction',[])
 
 // This creates an introduction controller with $scope as a dependency
 angular.module('angularIntroduction').controller('IntroductionController',['$scope',function($scope){
-	$scope.test = 'Hello World';
+
+	$scope.message = 'Search for your favorite fruit';
+
+	$scope.query = '';
+
+	$scope.fruits = [{
+		name: 'Apples',
+		color: 'Green'
+	},{
+		name: 'Pears',
+		color: 'Green'
+	},{
+		name: 'Bananas',
+		color: 'Yellow'
+	}];
+
 }]);
