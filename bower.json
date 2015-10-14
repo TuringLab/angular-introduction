@@ -19,6 +19,21 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "~1.4.7"
+    "angular": "~1.4.7",
+    "highcharts": "highcharts-release#~4.1.9",
+    "highcharts-ng": "~0.0.11"
+  },
+  "overrides" : {
+    "highcharts" : {
+      "main" : [
+        "adapters/standalone-framework.js",
+        "highcharts.js"
+      ]
+    },
+    "highcharts-ng" : {
+      "dependencies" : {
+        "highcharts" : "highcharts-release#~4.1.9"
+      }
+    }
   }
 }
