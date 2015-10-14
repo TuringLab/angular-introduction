@@ -1,0 +1,21 @@
+{
+  "name": "angular-introduction",
+  "version": "0.0.0",
+  "homepage": "https://github.com/TuringLab/angular-introduction",
+  "authors": [
+    "Henry Miskin <henry.miskin@talktalk.net>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
