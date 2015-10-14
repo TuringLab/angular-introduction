@@ -1,14 +1,14 @@
 var fruits = [{
 		_id: 0,
-		name: 'Apples',
+		name: 'Apple',
 		color: 'Green'
 	},{
 		_id: 1,
-		name: 'Pears',
+		name: 'Pear',
 		color: 'Green'
 	},{
 		_id: 2,
-		name: 'Bananas',
+		name: 'Banana',
 		color: 'Yellow'
 	}];
 
