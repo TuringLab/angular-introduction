@@ -1,6 +1,10 @@
 var express = require('express');
 var app = express();
 
+// API routes
+require('./fruits')(app);
+
+// Static Files
 app.use(express.static('./client'));
 app.set('port', process.env.PORT || 8000);
 
