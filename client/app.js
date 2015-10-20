@@ -16,5 +16,8 @@ angular.module('angularIntroduction').controller('FruitController',['$scope','Fr
 	$scope.query = '';
 
 	$scope.fruits = Fruit.query();
+	var fruit = new Fruit();
+	fruit.color='red';
+	fruit.$save();
 
 }]);

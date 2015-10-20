@@ -1,3 +1,5 @@
+var parser = require('body-parser').json()
+
 var fruits = [{
 		_id: 0,
 		name: 'Apples',
@@ -20,7 +22,7 @@ module.exports = function(app){
 	});
 
 	// Create a new fruit
-	app.post('/fruits/', function(req, res) {
+	app.post('/fruits/', parser, function(req, res) {
 		var fruit = req.body;
 		fruit._id = fruits.length;
 		fruits.push(fruit)
